@@ -1,1 +1,43 @@
 /* add your styles here */
+
+.primary {
+  position: absolute;
+  z-index: 1
+  left:125px;
+  top:125px;
+}
+
+.secondary{
+  position: absolute;
+  z-index: 2
+  left:125px;
+  top:250px;
+  opacity:0;
+}
+
+
+#portfolio:hover .primary img{
+  opacity:0;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+#portfolio:hover .secondary{
+  opacity:1;
+}
+
+/*img,  .primary:hover {
+  display: none; 
+}
+*/
+
+
+
+
+/*
+.secondary:hover{
+  opacity:1;
+}
+*/
